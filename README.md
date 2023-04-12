@@ -1,32 +1,10 @@
 # 💻 Sobre o desafio
 
-A ideia agora é criar uma aplicação em Node.js onde o usuário cadastra um filme, preenche com algumas informações (nome, descrição, nota) e cria tags relacionadas a ele.
+A ideia agora foi fazer o deploy da aplicação em Node.js, nossa API do RocketMovies.
 
+Antes do Deploy foi visto sobre o que é Dados Sensíveis (Senhas, dados, etc.) da nossa aplicação do backend. Foi criada uma variável de ambiente, na qual tem o papel que "cuidará" dos dados sensíveis dos usuários e da aplicação em si, é um arquivo **.env** que segue padrões de segurança.
 
-Explicando cada tabela e seus campos:
+Para o backend manter funcionando, foi aplicado a biblioteca **PM2**, que ira manter funcionando 24/7 (24hrs e 7 dias da semana) nossa API/Servidor.O backend Foi implantado com **Render**
 
-### Tabela de usuários (users)
-- id
-- nome do usuário
-- e-mail do usuário
-- senha do usuário
-- avatar do usuário
-- data de criação
-- data de edição
-
-### Tabela de anotações de um filme (notes)
-- id
-- título do filme
-- descrição do filme
-- nota que o usuário deu para o filme*
-- id do usuário
-- data de criação
-- data de edição
-
-### Tabela de tags (movie_tags)
-- id
-- id da anotação
-- id do usuário
-- nome da tag**
 
 
